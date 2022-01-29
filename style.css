@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@600&family=Itim&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #12181b;
+}
+
+.gamecontainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 7vh;
+    margin-bottom: 10vh;
+}
+
+.title{
+    font-size: 4vh;
+    margin-bottom: 3vh;
+}
+
+.display{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3, 10vh);
+    grid-template-columns: repeat(3, 10vh);
+}
+
+.box{
+    border: 1px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    cursor: pointer;
+}
+
+.playerX{
+    color: #09c372;
+    font-family: 'Itim', cursive;
+}
+
+.playerO{
+    color: #498AFB;
+    font-family: 'Itim', cursive;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    flex-direction: column;
+}
+
+.gif{
+    width: 0vh;
+    height: 0vh;
+    margin-bottom: 5vh;
+    position: relative;
+    left: -1vh;
+    transition: height 0.4s ease-in-out;
+}
+
+#reset{
+    background-color: #ff3860;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#reset:hover{
+    background-color: #f10d3b;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
