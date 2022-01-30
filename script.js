@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     const playerDisplay = document.querySelector('.display-player');
     const reset = document.getElementById('reset');
     const announcer = document.querySelector('.announcer');
+    const audio = new Audio('win.mp3')
 
     let board = ['','','','','','','','',''];
     let currentPlayer = 'X';
@@ -36,6 +37,8 @@ window.addEventListener('DOMContentLoaded',()=>{
                 continue;
             }
             if(a == b && b == c){
+                audio.currentTime = 0;
+                audio.play();
                 roundWon = true;
                 break;
             }
@@ -77,6 +80,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
         document.getElementById('gif').style.width = `0vh`;
         document.getElementById('gif').style.height = `0vh`;
+        audio.pause();
     }
 
     const annouce = (type)=>{
